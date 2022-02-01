@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav {
+  background-color: #967AA1; }
+  .nav .listaLinks li {
+    color: #192A51; }
+
+main {
+  background-color: black; }
+  main h1 {
+    color: #F5E6E8; }
+  main div {
+    color: #D5C6E0; }
+    main div a {
+      color: white;
+      background-color: cadetblue;
+      padding: 10px;
+      font-size: 35px; }
+      main div a:hover {
+        background-color: crimson; }
+
+#mainBlog {
+  color: white;
+  background-color: darkolivegreen; }
+
+footer {
+  width: 100%;
+  background-color: blue;
+  color: darkorange;
+  height: 10vh; }
+
+.btn-grande {
+  font-size: 26px;
+  padding: 20px;
+  background-color: cadetblue; }
+
+.btn-mediano {
+  font-size: 18px;
+  padding: 15px;
+  background-color: cadetblue; }
