@@ -1,0 +1,62 @@
+.servicios h2 {
+    font-size: $font-size-grande;
+    text-align: center;
+    color: $limon;
+    margin-top: 5rem;
+}
+
+.servicios .caja-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .caja {
+        flex: $flex-medio;
+        margin: 1rem;
+        padding: 1rem;
+        background: white;
+        border: .1rem solid $rgba2;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        .titulo {
+            color: $verde;
+            font-size: $font-size-grande;
+            padding-top: 1rem;
+        }
+        .tipos {
+            font-size: 4rem;
+            color: $limon;
+            padding: 1rem 0;
+            span {
+                font-size: 2rem;
+            }
+        }
+        ul {
+            padding: 1rem 0;
+            list-style: none;
+            li {
+                font-size: 1.7rem;
+                color: #333;
+                padding: .5rem 0;
+                .fa-check {
+                    color: lightgreen;
+                    padding-right: .5rem;
+                }
+                .fa-times {
+                    color: red;
+                    padding-right: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.servicios .caja-contenedor .caja:nth-child(2), .servicios .caja-contenedor .caja:hover {
+    border: .3rem solid $limon;
+
+}
+
+
+

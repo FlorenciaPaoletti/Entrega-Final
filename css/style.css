@@ -416,6 +416,54 @@ p {
     font-size: 1.5rem;
     padding: 1rem; }
 
+.servicios h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #25d1b2;
+  margin-top: 5rem; }
+
+.servicios .caja-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .servicios .caja-contenedor .caja {
+    flex: 1 1 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-bottom: 3rem; }
+    .servicios .caja-contenedor .caja .titulo {
+      color: #0c443a;
+      font-size: 2.5rem;
+      padding-top: 1rem; }
+    .servicios .caja-contenedor .caja .tipos {
+      font-size: 4rem;
+      color: #25d1b2;
+      padding: 1rem 0; }
+      .servicios .caja-contenedor .caja .tipos span {
+        font-size: 2rem; }
+    .servicios .caja-contenedor .caja ul {
+      padding: 1rem 0;
+      list-style: none; }
+      .servicios .caja-contenedor .caja ul li {
+        font-size: 1.7rem;
+        color: #333;
+        padding: .5rem 0; }
+        .servicios .caja-contenedor .caja ul li .fa-check {
+          color: lightgreen;
+          padding-right: .5rem; }
+        .servicios .caja-contenedor .caja ul li .fa-times {
+          color: red;
+          padding-right: .5rem; }
+
+.servicios .caja-contenedor .caja:nth-child(2), .servicios .caja-contenedor .caja:hover {
+  border: 0.3rem solid #25d1b2; }
+
 .footer {
   width: 100%;
   padding: 40px 0;
