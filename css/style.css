@@ -489,7 +489,8 @@ p {
       .footer .caja-contenedor .caja p {
         font-size: 1.5rem;
         padding: .5rem 0;
-        color: whitesmoke; }
+        color: whitesmoke;
+        text-align: left; }
       .footer .caja-contenedor .caja a {
         display: block;
         font-size: 1.5rem;
@@ -546,7 +547,9 @@ p {
     padding-top: 7.5rem;
     padding-bottom: 2rem; }
   .footer .caja-contenedor {
-    margin-left: 120px; } }
+    margin-left: 120px; }
+  section {
+    min-height: 65vh; } }
 
 @media (max-width: 768px) {
   header label {
@@ -587,7 +590,9 @@ p {
   .suscribite p {
     width: auto; }
   .footer .caja-contenedor {
-    margin-left: 130px; } }
+    margin-left: 130px; }
+  main {
+    margin-top: 100px; } }
 
 @media (max-width: 450px) {
   html {
@@ -598,4 +603,6 @@ p {
     .acerca_de .columna .content .bottons a :last-child {
       margin: 1rem 0; }
   .footer .caja-contenedor {
-    margin-left: 80px; } }
+    margin-left: 80px; }
+  img {
+    display: none; } }
