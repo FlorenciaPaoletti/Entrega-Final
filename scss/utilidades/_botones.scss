@@ -1,11 +1,3 @@
-.btn-grande {
-    font-size: 26px;
-    padding: 20px;
-    background-color: cadetblue;
-}
-
-.btn-mediano {
-    font-size: 18px;
-    padding: 15px;
-    background-color: cadetblue;
+.btn {
+    @include botonera ($gradiante, $blanco, $box-shadow);
 }
