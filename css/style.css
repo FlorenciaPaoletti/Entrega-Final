@@ -9,7 +9,7 @@
   border: none; }
 
 *::selection {
-  background: var(--limon);
+  background: #25d1b2;
   color: white; }
 
 html {
@@ -23,15 +23,6 @@ section {
   padding: 0 9%;
   padding-top: 7.5rem;
   padding-bottom: 2rem; }
-
-.heading {
-  text-align: center;
-  background: var(--verde);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 5rem;
-  padding: 1rem; }
 
 .funcionales {
   color: #333;
@@ -263,7 +254,7 @@ main {
   .gallery .gallery__picture::before {
     content: "";
     transform: scaleY(0);
-    transition: transform .4s; }
+    transition: transform .3s; }
   .gallery .gallery__picture:hover::before {
     position: absolute;
     content: "Visita el sitio para ver el trabajo terminado";
@@ -275,6 +266,7 @@ main {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     transform: scaleY(1); }
   .gallery .gallery__picture--g1 {
@@ -322,33 +314,36 @@ main {
     background: white; }
     .contacto form .inputcaja {
       position: relative; }
-      .contacto form .inputcaja input, .contacto form .inputcaja .contacto form .inputcaja textarea {
-        width: 100%;
-        background: none;
-        color: #333;
-        margin: 1.5rem 0;
-        padding: .5rem 0;
-        font-size: 1.7rem;
-        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-        text-transform: none; }
-      .contacto form .inputcaja textarea {
-        resize: none;
-        height: 13rem; }
-      .contacto form .inputcaja label {
-        position: absolute;
-        top: 1.7rem;
-        left: 0;
-        font-size: 1.7rem;
-        color: #666;
-        transition: .2s linear; }
-      .contacto form .inputcaja input:focus ~ label, .contacto form .inputcaja .contacto form .inputcaja input:valid ~ label, .contacto form .inputcaja .contacto form .inputcaja textarea:focus ~ label, .contacto form .inputcaja .contacto form .inputcaja textarea:valid ~ label {
-        top: -.5rem;
-        font-size: 1.5rem;
-        color: #25d1b2; }
-  .contacto .heading {
-    text-align: left;
-    padding: 0;
-    padding-bottom: 2rem; }
+    .contacto form textarea {
+      resize: none;
+      height: 13rem; }
+    .contacto form label {
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      font-size: 1.7rem;
+      color: #666;
+      transition: .2s linear; }
+
+.heading {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 2rem; }
+
+.contacto form .inputcaja input, .contacto form .inputcaja textarea {
+  width: 100%;
+  background: none;
+  color: #333;
+  margin: 1.5rem 0;
+  padding: .5rem 0;
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-transform: none; }
+
+.contacto form .inputcaja input:focus ~ label, .contacto form .inputcaja input:valid ~ label, .contacto form .inputcaja textarea:focus ~ label, .contacto form .inputcaja textarea:valid ~ label {
+  top: -.5rem;
+  font-size: 1.5rem;
+  color: #25d1b2; }
 
 .nosotros h2 {
   text-align: center;
@@ -535,11 +530,35 @@ p {
   .btn:hover {
     transform: scale(1.1); }
 
+@media (max-width: 1440px) {
+  img {
+    font-size: 30%; }
+  section {
+    padding-top: 11.5rem; }
+    section .nosotros {
+      padding-top: 0; }
+  main {
+    margin-top: 80px; }
+  .image__serv {
+    display: none; }
+  .acerca_de {
+    background-image: none;
+    background-color: #25d1b23b;
+    padding-bottom: 10rem; }
+  .footer .caja-contenedor {
+    margin-left: 210px; } }
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%; }
   .footer .caja-contenedor {
-    margin-left: 150px; } }
+    margin-left: 150px; }
+  .image__serv {
+    display: none; }
+  .acerca_de {
+    background-image: none; }
+  section {
+    padding-top: 11.5rem; } }
 
 @media (max-width: 990px) {
   section {
@@ -592,17 +611,26 @@ p {
   .footer .caja-contenedor {
     margin-left: 130px; }
   main {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .contacto {
+    padding-top: 11rem; } }
 
 @media (max-width: 450px) {
   html {
-    font-size: 49%; }
+    font-size: 45%; }
   .acerca_de .columna .content .bottons a {
     width: 100%;
     text-align: center; }
     .acerca_de .columna .content .bottons a :last-child {
       margin: 1rem 0; }
+  .image__serv {
+    display: none; }
   .footer .caja-contenedor {
     margin-left: 80px; }
+  .footer .creditos {
+    font-size: 1.5rem; }
   img {
-    display: none; } }
+    font-size: 20px; }
+  main {
+    margin-left: 0;
+    margin-right: 0; } }

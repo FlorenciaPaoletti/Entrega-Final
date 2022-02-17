@@ -1,3 +1,35 @@
+@media(max-width:1440px) {
+    img {
+        font-size: 30%;
+    }
+
+    section {
+        padding-top: 11.5rem;
+        .nosotros {
+            padding-top: 0;
+        }
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    .image__serv {
+        display: none;
+    }
+
+    .acerca_de {
+        background-image: none;
+        background-color: #25d1b23b;
+        padding-bottom: 10rem;
+    }
+
+    .footer .caja-contenedor {
+        margin-left: 210px;
+    }
+
+}
+
 @media(max-width:1200px) {
     html {
         font-size: 55%;
@@ -5,6 +37,18 @@
 
     .footer .caja-contenedor {
         margin-left: 150px;
+    }
+
+    .image__serv {
+        display: none;
+    }
+
+    .acerca_de {
+        background-image: none;
+    }
+
+    section {
+        padding-top: 11.5rem;
     }
 }
 
@@ -92,11 +136,15 @@
         margin-top: 100px;
     }
 
+    .contacto {
+        padding-top: 11rem;
+    }
+
 }
 
 @media(max-width:450px) {
     html {
-        font-size: 49%;
+        font-size: 45%;
     }
 
     .acerca_de .columna .content .bottons a {
@@ -108,11 +156,24 @@
         }
     }
 
+    .image__serv {
+        display: none;
+    }
+
     .footer .caja-contenedor {
         margin-left: 80px;
     }
 
+    .footer .creditos {
+        font-size: 1.5rem;
+    }
+
     img {
-        display: none;
+        font-size: 20px;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

@@ -11,7 +11,7 @@
 }
 
 *::selection {
-    background: var(--limon);
+    background: #25d1b2;
     color: white;
 }
 
@@ -30,15 +30,6 @@ section {
     padding-bottom: 2rem;
 }
 
-.heading {
-    text-align: center;
-    background: var(--verde);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 5rem;
-    padding: 1rem;
-}
 
 @import './variables/colores';
 @import './variables/medidas';

@@ -26,7 +26,7 @@ main {
     .gallery__picture::before {
         content: "";
         transform: scaleY(0);
-        transition: transform .4s;
+        transition: transform .3s;
     }
 
     .gallery__picture:hover::before {
@@ -40,6 +40,7 @@ main {
         color: white;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 1.5rem;
         transform: scaleY(1);
     }
